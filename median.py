@@ -12,7 +12,7 @@ while True:
 numbers.sort()
 length = len(numbers)
 if length % 2 == 0:
-	median = 0.5 * (numbers[length / 2] + numbers[(length / 2) + 1])
+	median = 0.5 * (numbers[int(length / 2)] + numbers[int(length / 2) + 1])
 	print(median)
 else:
 	print(numbers[(length + 1) / 2])
