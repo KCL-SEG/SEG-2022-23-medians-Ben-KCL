@@ -1,5 +1,4 @@
-"""Median calculator."""
-"""ENTER YOUR SOLUTION HERE!"""
+numbers = []
 
 while True:
     try:
@@ -9,4 +8,11 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+
+numbers.sort()
+length = len(numbers)
+if length % 2 == 0:
+	median = 0.5 * (numbers[length / 2] + numbers[(length / 2) + 1])
+	print(median)
+else:
+	print(numbers[(length + 1) / 2])
